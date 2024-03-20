@@ -34,7 +34,7 @@ const LoginPage = () => {
             </div>
             <button className={LoginStyle.form_button} type="submit">Continue</button>
             <p className={LoginStyle.form_text}>
-              <button className={LoginStyle.form_link} onClick={toggleForm}>Don't have an account? Create account</button>
+              <button className={LoginStyle.form_link} onClick={toggleForm}>Don't have an account? Create an account</button>
             </p>
           </form>
         )}
