@@ -23,7 +23,7 @@ const LoginPage = () => {
         {showLoginForm && (
           <form className={LoginStyle.form} id="login" onSubmit={handleSubmit}>
             <h1 className={LoginStyle.form_title}>Login</h1>
-            <div className={'${LoginStyle.form_message} ${LoginStyle.form_input_error_message}'}></div>
+            <div className={`${LoginStyle.form_message} ${LoginStyle.form_input_error_message}`}></div>
             <div className={LoginStyle.form_input_group}>
               <input type="text" className={LoginStyle.form_input} autoFocus placeholder="Username or email" />
               <div className={LoginStyle.form_input_error_message}></div>
@@ -34,7 +34,7 @@ const LoginPage = () => {
             </div>
             <button className={LoginStyle.form_button} type="submit">Continue</button>
             <p className={LoginStyle.form_text}>
-              <button className={LoginStyle.form_link} onClick={toggleForm}>Don't have an account? Create account</button>
+              <button className={LoginStyle.form_link} onClick={toggleForm}>Don't have an account? Create an account</button>
             </p>
           </form>
         )}
@@ -42,8 +42,8 @@ const LoginPage = () => {
         {!showLoginForm && (
           <form className={LoginStyle.form} id="createAccount" onSubmit={handleSubmit}>
             <h1 className={LoginStyle.form_title}>Create Account</h1>
-            <div className={'${LoginStyle.form_message} ${LoginStyle.form_message-error}'}></div>
-            <div className={LoginStyle.form__input_group}>
+            <div className={`${LoginStyle.form_message} ${LoginStyle.form_message_error}`}></div>
+            <div className={LoginStyle.form_input_group}>
               <input type="text" className={LoginStyle.form_input} autoFocus placeholder="Username" />
               <div className={LoginStyle.form_input_error_message}></div>
             </div>
@@ -66,6 +66,10 @@ const LoginPage = () => {
           </form>
         )}
       </div>
+      {/* Adding the waves */}
+      <div className={LoginStyle.wave}></div>
+      <div className={LoginStyle.wave}></div>
+      <div className={LoginStyle.wave}></div>
     </div>
   );
 };
