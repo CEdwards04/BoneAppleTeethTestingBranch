@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\amplify",
+    "\\amplify\\backend",
+    "\\amplify\\backend\\api",
+    "\\amplify\\backend\\api\\boneappleteeth",
+    "\\amplify\\backend\\api\\boneappleteeth\\resolvers",
+    "\\amplify\\backend\\api\\boneappleteeth\\stacks",
+    "\\amplify\\hooks",
+    "\\src",
+    "\\src\\CSS Modules"
+  ],
+  "SelectedNode": "\\package.json",
+  "PreviewInSolutionExplorer": false
+}
