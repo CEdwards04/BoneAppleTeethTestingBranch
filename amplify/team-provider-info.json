@@ -1,0 +1,23 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifybe3cc04fc6bc4-staging-164039-authRole",
+      "UnauthRoleArn": "arn:aws:iam::767398030545:role/amplify-amplifybe3cc04fc6bc4-staging-164039-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::767398030545:role/amplify-amplifybe3cc04fc6bc4-staging-164039-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-amplifybe3cc04fc6bc4-staging-164039-deployment",
+      "UnauthRoleName": "amplify-amplifybe3cc04fc6bc4-staging-164039-unauthRole",
+      "StackName": "amplify-amplifybe3cc04fc6bc4-staging-164039",
+      "StackId": "arn:aws:cloudformation:us-east-2:767398030545:stack/amplify-amplifybe3cc04fc6bc4-staging-164039/ef20d910-da45-11ee-b340-02138b5cefaf",
+      "AmplifyAppId": "d2guuqnalacqy6"
+    },
+    "categories": {
+      "api": {
+        "boneappleteeth": {}
+      },
+      "storage": {
+        "boneAppleTeethDB": {}
+      }
+    }
+  }
+}
