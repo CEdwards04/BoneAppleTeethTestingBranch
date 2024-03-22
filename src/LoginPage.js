@@ -93,8 +93,8 @@ const LoginPage = () => {
   };
 
   return (
-    <body className={LoginStyle.reactive_background}>
-      <div>
+    <body>
+      <div className={LoginStyle.reactive_background}>
         <div className="navbar-container">
           <Navbar />
         </div>
