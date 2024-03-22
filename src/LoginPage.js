@@ -93,100 +93,102 @@ const LoginPage = () => {
   };
 
   return (
-    <div>
-      <div className="navbar-container">
-        <Navbar />
-      </div>
-      <div className={LoginStyle.container}>
-        {showLoginForm && (
-          <form className={LoginStyle.form} id="login" onSubmit={handleSubmit}>
-            <h1 className={LoginStyle.form_title}>Login</h1>
-            <div className={`${LoginStyle.form_input_group}`}>
-              <input 
-                type="text" 
-                className={LoginStyle.form_input} 
-                autoFocus 
-                placeholder="Username or email" 
-                value={username} 
-                onChange={handleUsernameChange} 
-              />
-              <div className={LoginStyle.form_input_error_message}>{usernameError}</div>
-            </div>
-            <div className={LoginStyle.form_input_group}>
-              <input 
-                type="password" 
-                className={LoginStyle.form_input} 
-                placeholder="Password" 
-                value={password} 
-                onChange={handlePasswordChange} 
-              />
-              <div className={LoginStyle.form_input_error_message}>{passwordError}</div>
-            </div>
-            <button className={LoginStyle.form_button} type="submit">Continue</button>
-            <p className={LoginStyle.form_text}>
-              <button className={LoginStyle.form_link} onClick={toggleForm}>Don't have an account? Create an account</button>
-            </p>
-          </form>
-        )}
+    <body>
+      <div>
+        <div className="navbar-container">
+          <Navbar />
+        </div>
+        <div className={LoginStyle.container}>
+          {showLoginForm && (
+            <form className={LoginStyle.form} id="login" onSubmit={handleSubmit}>
+              <h1 className={LoginStyle.form_title}>Login</h1>
+              <div className={`${LoginStyle.form_input_group}`}>
+                <input 
+                  type="text" 
+                  className={LoginStyle.form_input} 
+                  autoFocus 
+                  placeholder="Username or email" 
+                  value={username} 
+                  onChange={handleUsernameChange} 
+                />
+                <div className={LoginStyle.form_input_error_message}>{usernameError}</div>
+              </div>
+              <div className={LoginStyle.form_input_group}>
+                <input 
+                  type="password" 
+                  className={LoginStyle.form_input} 
+                  placeholder="Password" 
+                  value={password} 
+                  onChange={handlePasswordChange} 
+                />
+                <div className={LoginStyle.form_input_error_message}>{passwordError}</div>
+              </div>
+              <button className={LoginStyle.form_button} type="submit">Continue</button>
+              <p className={LoginStyle.form_text}>
+                <button className={LoginStyle.form_link} onClick={toggleForm}>Don't have an account? Create an account</button>
+              </p>
+            </form>
+          )}
 
-{!showLoginForm && (
-  <form className={LoginStyle.form} id="createAccount" onSubmit={handleSubmit}>
-    <h1 className={LoginStyle.form_title}>Create Account</h1>
-    <div className={`${LoginStyle.form_message} ${LoginStyle.form_message_error}`}></div>
-    <div className={LoginStyle.form_input_group}>
-      <input 
-        type="text" 
-        className={LoginStyle.form_input} 
-        autoFocus 
-        placeholder="Username" 
-        value={username} 
-        onChange={handleUsernameChange} 
-      />
-      <div className={LoginStyle.form_input_error_message}>{usernameError}</div>
-    </div>
-    <div className={LoginStyle.form_input_group}>
-      <input 
-        type="text" 
-        className={LoginStyle.form_input} 
-        autoFocus 
-        placeholder="Email Address" 
-        value={email} 
-        onChange={handleEmailChange} 
-      />
-      <div className={LoginStyle.form_input_error_message}>{emailError}</div>
-    </div>
-    <div className={LoginStyle.form_input_group}>
-      <input 
-        type="password" 
-        className={LoginStyle.form_input} 
-        placeholder="Password" 
-        value={password} 
-        onChange={handlePasswordChange} 
-      />
-      <div className={LoginStyle.form_input_error_message}>{passwordError}</div>
-    </div>
-    <div className={LoginStyle.form_input_group}>
-      <input 
-        type="password" 
-        className={LoginStyle.form_input} 
-        placeholder="Confirm Password" 
-        value={confirmPassword} 
-        onChange={handleConfirmPasswordChange} 
-      />
-      <div className={LoginStyle.form_input_error_message}>{confirmPasswordError}</div>
-    </div>
-    <button className={LoginStyle.form_button} type="submit">Continue</button>
-    <p className={LoginStyle.form_text}>
-      <button className={LoginStyle.form_link} onClick={toggleForm}>Already have an account? Sign in</button>
-    </p>
-  </form>
-)}
+  {!showLoginForm && (
+    <form className={LoginStyle.form} id="createAccount" onSubmit={handleSubmit}>
+      <h1 className={LoginStyle.form_title}>Create Account</h1>
+      <div className={`${LoginStyle.form_message} ${LoginStyle.form_message_error}`}></div>
+      <div className={LoginStyle.form_input_group}>
+        <input 
+          type="text" 
+          className={LoginStyle.form_input} 
+          autoFocus 
+          placeholder="Username" 
+          value={username} 
+          onChange={handleUsernameChange} 
+        />
+        <div className={LoginStyle.form_input_error_message}>{usernameError}</div>
       </div>
-      {}
-      <div className={LoginStyle.wave}></div>
-      <div className={LoginStyle.wave}></div>
-      <div className={LoginStyle.wave}></div>
-    </div>
+      <div className={LoginStyle.form_input_group}>
+        <input 
+          type="text" 
+          className={LoginStyle.form_input} 
+          autoFocus 
+          placeholder="Email Address" 
+          value={email} 
+          onChange={handleEmailChange} 
+        />
+        <div className={LoginStyle.form_input_error_message}>{emailError}</div>
+      </div>
+      <div className={LoginStyle.form_input_group}>
+        <input 
+          type="password" 
+          className={LoginStyle.form_input} 
+          placeholder="Password" 
+          value={password} 
+          onChange={handlePasswordChange} 
+        />
+        <div className={LoginStyle.form_input_error_message}>{passwordError}</div>
+      </div>
+      <div className={LoginStyle.form_input_group}>
+        <input 
+          type="password" 
+          className={LoginStyle.form_input} 
+          placeholder="Confirm Password" 
+          value={confirmPassword} 
+          onChange={handleConfirmPasswordChange} 
+        />
+        <div className={LoginStyle.form_input_error_message}>{confirmPasswordError}</div>
+      </div>
+      <button className={LoginStyle.form_button} type="submit">Continue</button>
+      <p className={LoginStyle.form_text}>
+        <button className={LoginStyle.form_link} onClick={toggleForm}>Already have an account? Sign in</button>
+      </p>
+    </form>
+  )}
+        </div>
+        {}
+        <div className={LoginStyle.wave}></div>
+        <div className={LoginStyle.wave}></div>
+        <div className={LoginStyle.wave}></div>
+      </div>
+    </body>
   );
 };
 

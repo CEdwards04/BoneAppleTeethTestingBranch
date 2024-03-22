@@ -9,19 +9,21 @@ import MealSearchFunction from './mealSearchFunction';
 
 function MealSearch() {
     return (
-        <div>
-          <Navbar></Navbar>
-          <h1>Meal Search</h1>
-          <h2>Bone Apple Teeth</h2>
-          <table>
-            <tr>
-              <td>
-                <MealSearchFunction></MealSearchFunction>
-              </td>
-              <td className={mealSearchStyle.meal_cards}><Card></Card></td>
-            </tr>
-          </table>
-        </div>
+        <body>
+          <div>
+            <Navbar></Navbar>
+            <h1>Meal Search</h1>
+            <h2>Bone Apple Teeth</h2>
+            <table>
+              <tr>
+                <td>
+                  <MealSearchFunction></MealSearchFunction>
+                </td>
+                <td className={mealSearchStyle.meal_cards}><Card></Card></td>
+              </tr>
+            </table>
+          </div>
+        </body>
       );
 }
 
